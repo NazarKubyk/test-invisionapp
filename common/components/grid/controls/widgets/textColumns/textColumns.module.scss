@@ -1,0 +1,23 @@
+@import '@styles/variables.scss';
+@import 'foundation-sites/scss/foundation.scss';
+
+.widgetTextColumns {
+    margin: 40px;
+
+    .content{
+        display: flex;
+        width: fit-content;
+        margin: auto;
+      .item{
+       text-align: center;
+       padding: 10px 20px;
+       text-transform: uppercase;
+      }
+      .item:nth-child(2){
+        border-left: 0.5px solid $blueLight;
+        border-right: 0.5px solid $blueLight;
+      }
+    }
+    
+  
+}

@@ -1,0 +1,15 @@
+@import "@styles/variables.scss";
+
+.simple {
+    padding: 16px 52px;
+    background-color: $white;
+    transition: 200ms;
+    color: $blue;
+
+}
+
+.simple:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    background-color: $greenBlueLight;
+}
