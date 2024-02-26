@@ -1,0 +1,20 @@
+@import "@styles/variables.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1;
+  opacity: 0.9;
+  background-color: #f0f0f0;
+
+  .triandle {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid $blue;
+  }
+}

@@ -1,0 +1,80 @@
+@import "@styles/variables.scss";
+
+.imagesSlider {
+  position: relative;
+
+  .imageCard {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .title {
+    text-transform: uppercase;
+    color: $white;
+    line-height: 1;
+  }
+
+  .titleRegular {
+    font-size: 50px;
+    font-weight: 200;
+  }
+
+  .titleBold {
+    font-size: 70px;
+    font-weight: 800;
+  }
+
+  .slideVideoPreview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+
+    aspect-ratio: 1.65/1;
+    width: 250px;    
+    border-radius: 10px;
+  }
+
+  .slideContentBox {
+    display: flex;
+    align-items: flex-end;
+    gap: 5%;
+  }
+
+  .buttonAction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 10px;
+    background-color: $white;
+    padding: 20px 30px;
+    padding-right: 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    cursor: pointer;
+    color: $blueHeaderPrimary;
+  }
+
+  .buttonActionLight {
+    font-weight: 200;
+  }
+
+  .buttonActionBold {
+    font-weight: 700;
+    margin-right: 5%;
+  }
+}

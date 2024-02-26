@@ -12,6 +12,7 @@ import PinnedLinks from "@components/grid/controls/widgets/pinnedLinks/pinnedLin
 import Text from "@components/grid/controls/widgets/text/text";
 import TextColumns from "@components/grid/controls/widgets/textColumns/textColumns";
 import Carousel from "@components/grid/controls/widgets/carousel/carousel";
+import { ImagesSlider } from "@components/fullScreenImageSlider/ImagesSlider";
 
 export type HardCodedPageModel = {
   locale: string;
@@ -27,6 +28,7 @@ const Home: NextPage<HardCodedPageModel> = ({ locale }) => {
         {...(HomeContent.textColumns!.unmatchedQuality as WidgetModel)}
       />
       <Carousel {...(HomeContent.carousel!.boats as WidgetModel)} />
+      <ImagesSlider/>
     </Layout>
   );
 };
