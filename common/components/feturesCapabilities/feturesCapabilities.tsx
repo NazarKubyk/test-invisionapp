@@ -36,9 +36,11 @@ export const FeturesCapabilities = () => {
         </div>
       </div>
       <div className={styles.features}>
-        <p className={styles.leftFeaturesQuestion}>
-          WHAT FEATURES & CAPABILITIES DO YOU FIND IMPORTANT?
-        </p>
+        <div className={styles.leftFeaturesQuestion}>
+          <p className={styles.leftFeaturesQuestionText}>
+            WHAT <b>FEATURES & CAPABILITIES</b>&nbsp;DO YOU FIND IMPORTANT?
+          </p>
+        </div>
         <div className={styles.rightBoat}>
           <p>Lets help you find</p>
           <h4>The perfect boat</h4>

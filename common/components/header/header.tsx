@@ -1,6 +1,8 @@
+import Image from "next/image";
 import styles from "./header.module.scss";
 import { motion, useAnimation } from "framer-motion";
 import Link from "next/link";
+import { LogoIcon } from "public/logo";
 import { useEffect, useState } from "react";
 
 export type BasicLink = {
@@ -54,7 +56,7 @@ export default function Header({
       initial="initial"
     >
       <div className={styles.container}>
-        <img src={logo} alt="Logo" />
+        <Image src={LogoIcon.src} alt="Logo" width={183} height={84} />
         <nav className={styles.navBar}>
           <div
             className={`${styles.linksContainer} ${styles.linksSecondaryContainer}`}
