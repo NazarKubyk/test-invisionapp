@@ -13,6 +13,7 @@ import Text from "@components/grid/controls/widgets/text/text";
 import TextColumns from "@components/grid/controls/widgets/textColumns/textColumns";
 import Carousel from "@components/grid/controls/widgets/carousel/carousel";
 import { ImagesSlider } from "@components/fullScreenImageSlider/ImagesSlider";
+import { FeturesCapabilities } from "@components/feturesCapabilities/feturesCapabilities";
 
 export type HardCodedPageModel = {
   locale: string;
@@ -28,7 +29,8 @@ const Home: NextPage<HardCodedPageModel> = ({ locale }) => {
         {...(HomeContent.textColumns!.unmatchedQuality as WidgetModel)}
       />
       <Carousel {...(HomeContent.carousel!.boats as WidgetModel)} />
-      <ImagesSlider/>
+      <ImagesSlider />
+      <FeturesCapabilities />
     </Layout>
   );
 };

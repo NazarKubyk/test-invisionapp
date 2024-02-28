@@ -49,12 +49,10 @@ export default function Layout({ children }: LayoutData) {
             transition={animation.transition}
             variants={animation.variants}
           >
-            <main id="content" style={{ height: "200vh" }}>
-              {children}
-            </main>
-            <Footer {...FooterContent} />
+            <main id="content">{children}</main>
           </m.div>
         </AnimatePresence>
+        <Footer {...FooterContent} />
       </LazyMotion>
     </>
   );
